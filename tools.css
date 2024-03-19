@@ -1,0 +1,85 @@
+/* LOGIN MODAL FORM */
+
+#login-show{
+    position: absolute;
+    transition: .5s;
+}
+
+#login-modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.hidden{
+    display: none; 
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+
+.modal{
+    width: 400px;
+    border-radius: 15px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+}
+
+.top-form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-modal{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.login-form{
+    display: grid;
+    justify-items: center;
+}
+
+.login-form h2{
+    margin: 10px;
+}
+
+.form-input{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-input .form-control{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: medium;
+    border: solid 1px #808080;
+}
+
+.form-input button{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px #cccccc;
+    background: #6effafa1;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.form-input button:hover{
+    background: #6effaf;
+}
