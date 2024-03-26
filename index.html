@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobileNav.css">
+    <link rel="stylesheet" href="desktopNav.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet"> -->
+    <title>portfolio-cc</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body class="desktop">
+    <nav class="">
+        <div class="menuToggle"></div>
+        <div class="navCon">
+            
+            <a href="#" class="logo">
+                <h1>Olaniyan Segun</h1>
+            </a >
+            <ul>
+                <li class="navM home active"><a href="#home">Home</a></li>
+                <li class="navM skills"><a href="#skills">Skills</a></li>
+                <li class="navM projects"><a href="#projects">Projects</a></li>
+                <li class="navM contacts"><a href="#contacts">Contacts</a></li>
+                <li class="navM inbox flex"><a href="#contacts">Inbox<div class="num">2</div></a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="admin_nav">
+        <ul>
+        </ul>
+    </div>
+
+    <ul class="dots">
+        <a href="#home"><li class="dot home activeDot"></li></a>
+        <a href="#skills"><li class="dot skills"></li></a>
+        <a href="#projects"><li class="dot projects"></li></a>
+        <a href="#contacts"><li class="dot contacts"></li></a>
+        <!-- <a href="#"><li class="dot footer"></li></a> -->
+    </ul>
+    <main class="main">
+            <div class="admin" id="login-show">
+                <ul>
+                    <li style="font-size: xx-large; cursor:pointer;"><i class="fa-solid fa-user-shield"></i></li>
+                </ul>
+            </div>
+            <div id="login-modal" class="login-modal hidden">
+                <div class="modal">
+                    <div class="top-form">
+                        <div id="close-modal" class="close-modal">
+                            &#10006
+                        </div>
+                    </div>
+                    <div class="login-form">
+                        <h2>Admin</h2>
+                        <form class="form-input" action="">
+                            <input type="text" class=" form-control" placeholder="Username">
+                            <input type="text" class=" form-control" placeholder="Password">
+                            <button>Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+            <!-- HOME -->
+            <section id="home" class="">
+                <div class="page one flex flex-wrap">
+                    <div class="image">
+                        <img src="image/20221007_08283836r.jpg" alt=""  class="profile-picture">
+                        <!-- <img src="image/joshua-oyebanji-LEB4O4n0IdQ-unsplash_cropped1.jpg" alt="" class="profile-picture"> -->
+                    </div>
+
+                    <div class="grid intro">
+                        <h2 class="intro-title">Hi, i'm Paul</h2>
+                        <div class="intro-body">
+                            <h1>I am a fullstack developer </h1>
+                        </div>
+                        <a href="#contacts" class="button">
+                            <span class="icon">
+                                <ion-icon name="chatbubble-outline"></ion-icon>
+                            </span> 
+                            <span class="text">Let's talk</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class=" skills page two grid">
+                <div class="page-two-grid">
+                </div>
+                <h1>Skills</h1>
+                <div class="skills-container flex flex-wrap">
+                    <div class="skills fontend">
+                        <div class="skills-head flex">
+                            <h2><i class="fas light fa-laptop-code"></i></h2>
+                            </div>
+                        <div class="skills-body grid">
+                            <ul>
+                                <li class="flex">
+                                    <img src="/image/html.svg" alt="">
+                                    HTML
+                                </li>
+                                <li class="flex">
+                                    <img src="/image/css.svg" alt="">
+                                    Css
+                                </li>
+                                <li class="flex">
+                                    <img src="/image/js.svg" alt="">
+                                    Javascript
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills backend">
+                        <div class="skills-head flex">
+                            <h2>
+                                <!-- <i class="fa-solid fa-server"></i> -->
+                                <i class="fa-solid fa-database"></i>
+                            </h2>
+                        </div>
+                        <div class="skills-body grid">
+                            <ul>
+                                <li class="flex">
+                                    <img src="/image/python.svg" alt="">
+                                    Python
+                                </li>
+                                <li class="flex">
+                                    <img src="/image/php.svg" alt="">
+                                    PHP
+                                </li>
+                                <li class="flex">
+                                    <img src="/image/js.svg" alt="">
+                                    Javascript
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills tools">
+                        <div class="skills-head flex">
+                            <h2><i class="fa-solid fa-gears"></i></h2>
+
+                        </div>
+                        <div class="skills-body grid">
+                            <ul>
+                                <li class="flex">
+                                    <img src="/image/django.svg" alt="">
+                                    Django
+                                </li>
+                                <li class="flex">
+                                    <img src="/image/laravel.svg" alt="">
+                                    Laravel
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="projects" class="page two grid">
+                <h1>Projects</h1>
+                <!-- <div class="project-container flex flex-wrap">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="image/Screenshot 2023-03-29 235650.jpg" alt="">
+                        </div>
+                        <div class="project-details grid">
+                            <div class="project-title">
+                                <h4>Light up</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eum dolores possimus corporis maxime sint quo, blanditiis quaerat quae magnam?</p>
+                            </div>
+                            <div class="project-links flex">
+                                <a href="#"><h2><i class="fa-brands fa-github"></i></h2></a>
+                                <a href="#"><h2><i class="fa-solid fa-link"></i></h2></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="/image/Screenshot 2023-03-29 235650.jpg" alt="">
+                        </div>
+                        <div class="project-details grid">
+                            <div class="project-title">
+                                <h4>Light up</h4>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eum dolores possimus corporis maxime sint quo, blanditiis quaerat quae magnam?</p>
+                            </div>
+                            <div class="project-links flex">
+                                <a href="#"><h2><i class="fa-brands fa-github"></i></h2></a>
+                                <a href="#"><h2><i class="fa-solid fa-link"></i></h2></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination flex">
+                    <a href="#" class="prev">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" viewBox="0 0 35.566 52.944">
+                                <path id="Path_1" data-name="Path 1" d="M232.338,423.188l-18.67,15.459,18.67,17.732" transform="translate(-206.668 -413.332)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                            </svg>                              
+                        </div>
+                    </a>
+                    <div class="page-num"><h4>1</h4></div>
+                    <a href="#" class="next">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" viewBox="0 0 35.566 52.944">
+                                <path id="Path_1" data-name="Path 1" d="M232.338,423.188l-18.67,15.459,18.67,17.732" transform="translate(242.235 466.275) rotate(180)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div> -->
+                <iframe src="n_pagin/n_pagin.html" class="pagination-iframe"></iframe>
+            </section>
+            <section id="contacts" class=" grid">
+                <div class="contactCon">
+                    <form action="" class="flex">
+                        <div class="form-prop grid">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer class="flex my-footer">
+                <div class="reach grid">
+                    <a href="#" class="footer-logo">
+                        <p>Olaniyan Segun</p>
+                    </a>
+                    <div class="outer-links flex">
+                        <a href="#"><h2><i class="fa-brands fa-github"></i></h2></a>
+                        <a href="#"><h2><i class="fa-solid fa-envelope"></i></h2></a>
+                        <a href="#"><h2><i class="fa-brands fa-facebook"></i></h2></a>
+                        <a href="#"><h2><i class="fa-brands fa-facebook"></i></h2></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Olaniyan Segun. All rights reserved.</p>
+                </div>
+        </footer>
+    </main>
+
+<script type="text/javascript">
+    $(function(){
+        $('#login-show').click(function(){
+            $('#login-modal').fadeIn().css('display', 'flex');
+        });
+
+        $('#close-modal').click(function(){
+            $('#login-modal').fadeOut();
+        });
+    });
+</script>
+
+
+<script src="script.js"></script>
+<script src="pagination.js"></script>
+<!-- <script src="https://kit.fontawesome.com/17d1b0692a.js" crossorigin="anonymous"></script> -->
+<!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> -->
+<!-- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+
+</body>
+</html>

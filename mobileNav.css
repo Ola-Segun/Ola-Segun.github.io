@@ -1,0 +1,106 @@
+
+/* MOBILE NAV */
+
+.mobile nav{
+    padding-top: 0;
+    width: 70px;
+    height: 70px;
+    transition: .5s;
+    inset: 2% 0 2% 3%;
+}
+
+    /* MOBILE NAV MENUTOGGLE */
+.mobile nav .menuToggle{
+    position: absolute;
+    top: 6px;
+    left: -3px;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: flex-start;
+    padding: 0 23px;
+}
+
+.mobile nav .menuToggle::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    border-radius: 20px;
+    background: #333;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+.mobile nav .menuToggle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    border-radius: 20px;
+    background: #333;
+    transform: translateY(8px);
+    transition: 0.5s;
+    box-shadow: 0 -8px 0 #333;
+}
+
+/* OPEN MOBILE NAV */
+
+.mobile nav.open .menuToggle::before{
+    transform: translateY(0px) rotate(45deg);
+}
+.mobile nav.open .menuToggle{
+    width: 75px;
+}
+
+.mobile nav.open .menuToggle::after{
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 #333;
+}
+
+
+.mobile nav.open{
+    width: 200px;
+    height: 85%;
+    transition: .5s;
+}
+
+.mobile nav.open ul li{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+}
+
+.mobile nav.open .navCon{
+    display: grid;
+    justify-content: center;
+}
+
+.mobile nav.open .navCon .logo{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+}
+
+.mobile nav.open .navCon ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile nav.open .navCon ul li{
+    margin: 15px 0;
+}
+
+
+.mobile nav ul li{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile nav .navCon .logo{
+    opacity: 0;
+    visibility: hidden;
+}
