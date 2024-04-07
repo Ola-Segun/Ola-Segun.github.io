@@ -15,7 +15,7 @@
     color: #fff;
 }
 
-@media(max-width: portrait){
+@media(max-width: 750px){
     .main footer{
         display: grid;
     }
