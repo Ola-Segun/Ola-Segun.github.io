@@ -4,6 +4,7 @@
 
 .main footer{
     display: flex;
+    max-height: fit-content;
     height: 20vh;
     width: 100vw;
     margin-top: 20px;
